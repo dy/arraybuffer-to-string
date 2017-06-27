@@ -141,7 +141,7 @@ t('utf8 replacement chars (1 byte sequence)', function (t) {
   t.end()
 })
 
-isBrowser && t('utf8 replacement chars (2 byte sequences)', function (t) {
+t('utf8 replacement chars (2 byte sequences)', function (t) {
   t.equal(
     toString(b2ab(Buffer.from([ 0xC7 ]))  ),
     '\uFFFD'
