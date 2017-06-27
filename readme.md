@@ -23,5 +23,5 @@ Note: in browser it relies on [TextDecoder API](https://developer.mozilla.org/en
 
 ### Related
 
-* [data-uri-to-buffer](https://www.npmjs.com/package/data-uri-to-buffer) − decode URI string to Buffer.
-* [to-array-buffer](https://www.npmjs.com/package/to-array-buffer) − convert anything to ArrayBuffer.
+* [string-to-arraybuffer](https://github.com/dfcreative/string-to-arraybuffer) − convert string to arraybuffer.
+* [arraybuffer-to-datauri](https://github.com/dfcreative/arraybuffer-to-datauri) − convert binary data to datauri string.
