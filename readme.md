@@ -1,6 +1,6 @@
 # arraybuffer-to-string [![unstable](https://img.shields.io/badge/stability-unstable-orange.svg)](http://github.com/badges/stability-badges) [![Build Status](https://img.shields.io/travis/dfcreative/arraybuffer-to-string.svg)](https://travis-ci.org/dfcreative/arraybuffer-to-string)
 
-Convert _ArrayBuffer_ to string.
+Convert _ArrayBuffer_ to string with optional encoding.
 
 [![npm install arraybuffer-to-string](https://nodei.co/npm/arraybuffer-to-string.png?mini=true)](https://npmjs.org/package/arraybuffer-to-string/)
 
