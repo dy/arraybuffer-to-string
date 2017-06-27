@@ -5,7 +5,17 @@ var toString = require('./');
 var t = require('tape')
 var b2ab = require('buffer-to-arraybuffer')
 var isBrowser = require('is-browser')
+var str2ab = require('string-to-arraybuffer')
 
+t('basics', t => {
+    console.log(toString(new Uint8Array([ 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33 ]), 'binary'))
+
+    t.equal(
+        toString(new Uint8Array([ 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33 ])),
+        'Hello World!'
+    )
+    t.end()
+})
 
 t('utf8 buffer to base64', function (t) {
   t.equal(

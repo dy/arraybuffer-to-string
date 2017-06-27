@@ -1,26 +1,25 @@
 # arraybuffer-to-string [![unstable](https://img.shields.io/badge/stability-unstable-orange.svg)](http://github.com/badges/stability-badges) [![Build Status](https://img.shields.io/travis/dfcreative/arraybuffer-to-string.svg)](https://travis-ci.org/dfcreative/arraybuffer-to-string)
 
-Convert _ArrayBuffer_ to string of encoding.
+Convert _ArrayBuffer_ to string.
 
 [![npm install arraybuffer-to-string](https://nodei.co/npm/arraybuffer-to-string.png?mini=true)](https://npmjs.org/package/arraybuffer-to-string/)
 
 ```js
 var ab2str = require('arraybuffer-to-string')
 
-// Plain 'Hello World!'
-var abuf1 = ab2str(toString(b2ab(Buffer.from('Ձאab', 'utf8')), 'base64'))
+var uint8 = new Uint8Array([ 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33 ])
 
-// Base-64 'Hello World!'
-var abuf2 = ab2str('SGVsbG8sIFdvcmxkIQ%3D%3D')
-
-// Barebones data-uri 'Hello World!'
-var abuf3 = ab2str('data:,Hello%2C%20World!')
-
-// Base-64 data-uri 'Hello World!'
-var abuf4 = ab2str('data:text/plain;base64,SGVsbG8sIFdvcmxkIQ%3D%3D')
+ab2str(uint8) // 'Hello World!'
+ab2str(uint8, 'base64') // 'SGVsbG8gV29ybGQh'
+ab2str(uint8, 'hex') // '48656c6c6f20576f726c6421'
+ab2str(uint8, 'iso-8859-2') // 'Hello World!'
 ```
 
-Note: in browser it relies upon [TextDecoder API](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/decode) for custom charsets, so if you are dealing with something different from `utf8`, `ascii`, `binary` or `base64` in old browsers, please include [encoding polyfill](https://github.com/inexorabletash/text-encoding).
+### var str = arrayBufferToString(buffer, encoding='utf8')
+
+Convert ArrayBuffer/ArrayBufferView/Array `buffer` to string with defined encoding. Available encoding: `utf8`, `binary`, `base64`, `hex`, `ascii`, `latin1`, `ucs2`, `utf16` and [many others](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/encoding).
+
+Note: in browser it relies on [TextDecoder API](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/decode), so if you are dealing with charsets other than `utf8`, `ascii`, `binary` or `base64` in old browsers, please include [encoding polyfill](https://github.com/inexorabletash/text-encoding).
 
 ### Related
 
