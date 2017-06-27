@@ -1,0 +1,36 @@
+{
+  "name": "arraybuffer-to-string",
+  "version": "1.0.0",
+  "description": "Convert ArrayBuffer to string",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "browser": "./browser.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfcreative/string-to-arraybuffer.git"
+  },
+  "keywords": [
+    "arraybuffer",
+    "array-buffer",
+    "array",
+    "buffer",
+    "string",
+    "base64",
+    "atob",
+    "btoa",
+    "datauri"
+  ],
+  "author": "Dima Yv <dfcreative@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfcreative/string-to-arraybuffer/issues"
+  },
+  "homepage": "https://github.com/dfcreative/string-to-arraybuffer#readme",
+  "devDependencies": {
+    "is-browser": "^2.0.1",
+    "buffer-to-arraybuffer": "0.0.4",
+    "tape": "^4.7.0"
+  }
+}
