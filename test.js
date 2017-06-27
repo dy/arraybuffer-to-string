@@ -8,8 +8,6 @@ var isBrowser = require('is-browser')
 var str2ab = require('string-to-arraybuffer')
 
 t('basics', t => {
-    console.log(toString(new Uint8Array([ 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33 ]), 'binary'))
-
     t.equal(
         toString(new Uint8Array([ 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33 ])),
         'Hello World!'
@@ -252,7 +250,7 @@ isBrowser && t('utf8 replacement chars for anything in the surrogate pair range'
 
 t('utf8 don\'t replace the replacement char', function (t) {
   t.equal(
-    toString(b2ab(Buffer.from('\uFFFD')), ),
+    toString(b2ab(Buffer.from('\uFFFD'))  ),
     '\uFFFD'
   )
   t.end()
