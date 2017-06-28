@@ -24,4 +24,4 @@ Note: in browser it relies on [TextDecoder API](https://developer.mozilla.org/en
 ### Related
 
 * [string-to-arraybuffer](https://github.com/dfcreative/string-to-arraybuffer) − convert string to arraybuffer.
-* [arraybuffer-to-datauri](https://github.com/dfcreative/arraybuffer-to-datauri) − convert binary data to datauri string.
+* [create-data-uri](https://www.npmjs.com/package/create-data-uri) − convert binary data to datauri string.
