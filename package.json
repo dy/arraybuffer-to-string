@@ -9,7 +9,7 @@
   "browser": "./browser.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dfcreative/string-to-arraybuffer.git"
+    "url": "git+https://github.com/dfcreative/arraybuffer-to-string.git"
   },
   "keywords": [
     "arraybuffer",
@@ -25,9 +25,9 @@
   "author": "Dima Yv <dfcreative@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dfcreative/string-to-arraybuffer/issues"
+    "url": "https://github.com/dfcreative/arraybuffer-to-string/issues"
   },
-  "homepage": "https://github.com/dfcreative/string-to-arraybuffer#readme",
+  "homepage": "https://github.com/dfcreative/arraybuffer-to-string#readme",
   "devDependencies": {
     "buffer-to-arraybuffer": "0.0.4",
     "is-browser": "^2.0.1",
