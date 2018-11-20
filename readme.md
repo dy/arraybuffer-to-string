@@ -1,4 +1,4 @@
-# arraybuffer-to-string [![unstable](https://img.shields.io/badge/stability-unstable-orange.svg)](http://github.com/badges/stability-badges) [![Build Status](https://img.shields.io/travis/dfcreative/arraybuffer-to-string.svg)](https://travis-ci.org/dfcreative/arraybuffer-to-string)
+# arraybuffer-to-string [![unstable](https://img.shields.io/badge/stability-unstable-orange.svg)](http://github.com/badges/stability-badges) [![Build Status](https://img.shields.io/travis/dy/arraybuffer-to-string.svg)](https://travis-ci.org/dy/arraybuffer-to-string)
 
 Convert _ArrayBuffer_ to string with optional encoding.
 
@@ -23,5 +23,5 @@ Note: in browser it relies on [TextDecoder API](https://developer.mozilla.org/en
 
 ### Related
 
-* [string-to-arraybuffer](https://github.com/dfcreative/string-to-arraybuffer) − convert string to arraybuffer.
+* [string-to-arraybuffer](https://github.com/dy/string-to-arraybuffer) − convert string to arraybuffer.
 * [create-data-uri](https://www.npmjs.com/package/create-data-uri) − convert binary data to datauri string.
